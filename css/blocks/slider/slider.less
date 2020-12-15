@@ -1,0 +1,79 @@
+.slider {
+    width: 290px;
+    height: 221px;
+    overflow: hidden;
+    margin-bottom: 15px;
+
+    input {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    @media @screen-gt-s {
+        width: 333px;
+        height: 227px;
+    }
+
+    @media @screen-gt-m {
+        width: 530px;
+        height: 360px;
+    }
+}
+
+.navigation {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+
+    @media @screen-gt-s {
+        margin-top: 15px;
+    }
+}
+
+.control {
+    width: 8px;
+    height: 8px;
+    cursor: pointer;
+    margin: 4px;
+    background-color: #DFDEDD;
+    border-radius: 50%;
+    transition: all .4s ease;
+
+    &:hover {
+        background-color: @color-dark;
+        transform: scale(1.1);
+    }
+}
+
+.slides {
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+
+.slide {
+    width: 25%;
+    transition: all .6s ease;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+#point-1:checked ~ .s1 {
+    margin-left: 0;
+}
+
+#point-2:checked ~ .s1 {
+    margin-left: -25%;
+}
+
+#point-3:checked ~ .s1 {
+    margin-left: -50%;
+}
+
+#point-4:checked ~ .s1 {
+    margin-left: -75%;
+}
