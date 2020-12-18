@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./blocks/header/search.svg":[["search.8c8c89df.svg","css/blocks/header/search.svg"],"css/blocks/header/search.svg"],"./blocks/header/login.svg":[["login.33638b7a.svg","css/blocks/header/login.svg"],"css/blocks/header/login.svg"],"./blocks/header/menu.svg":[["menu.f0dd8858.svg","css/blocks/header/menu.svg"],"css/blocks/header/menu.svg"],"_css_loader":"../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./blocks/header/search.svg":[["search.8c8c89df.svg","css/blocks/header/search.svg"],"css/blocks/header/search.svg"],"./blocks/header/login.svg":[["login.33638b7a.svg","css/blocks/header/login.svg"],"css/blocks/header/login.svg"],"./blocks/header/menu.svg":[["menu.f0dd8858.svg","css/blocks/header/menu.svg"],"css/blocks/header/menu.svg"],"./blocks/social/facebook.svg":[["facebook.ddb44397.svg","css/blocks/social/facebook.svg"],"css/blocks/social/facebook.svg"],"./blocks/social/instagram.svg":[["instagram.bfc79579.svg","css/blocks/social/instagram.svg"],"css/blocks/social/instagram.svg"],"./blocks/social/twitter.svg":[["twitter.98166b3e.svg","css/blocks/social/twitter.svg"],"css/blocks/social/twitter.svg"],"./blocks/social/vk.svg":[["vk.f9c6b044.svg","css/blocks/social/vk.svg"],"css/blocks/social/vk.svg"],"_css_loader":"../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36255" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35755" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

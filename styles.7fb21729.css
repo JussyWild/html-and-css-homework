@@ -360,7 +360,6 @@ button {
   box-sizing: border-box;
   padding: 30px 0;
   background-color: #EEEEEE;
-  height: 240px;
 }
 @media (min-width: 768px) {
   .section-services {
@@ -398,7 +397,6 @@ button {
   color: #333333;
   margin-left: 20px;
   width: 211px;
-  height: 40px;
 }
 @media (min-width: 768px) {
   .service__description {
@@ -421,29 +419,13 @@ button {
     width: 290px;
   }
 }
-@media (min-width: 768px) {
-  .service__delivery {
-    padding-right: 30px;
-  }
-}
-.service__return {
-  padding-right: 40px;
-}
-@media (min-width: 768px) {
-  .service__return {
-    padding-right: 0;
-  }
-}
-@media (min-width: 768px) {
-  .service__support {
-    padding-right: 20px;
-  }
+.service:last-child {
+  margin-bottom: 0;
 }
 .footer {
   background-color: #212122;
   box-sizing: border-box;
   padding: 30px 0 22px;
-  height: 299px;
 }
 @media (min-width: 768px) {
   .footer__content {
@@ -457,7 +439,7 @@ button {
 @media (min-width: 1000px) {
   .footer__fill {
     display: block;
-    flex-grow: 0.111;
+    flex-grow: 0.1;
   }
 }
 .footer__logo {
@@ -480,27 +462,20 @@ button {
 .footer__copyright {
   box-sizing: border-box;
   color: #999999;
-  height: 95px;
-  padding-right: 40px;
 }
 @media (min-width: 768px) {
   .footer__copyright {
     width: 610px;
-    height: 70px;
-    padding-right: 30px;
   }
 }
 @media (min-width: 1000px) {
   .footer__copyright {
     width: 727px;
-    height: 45px;
-    padding-right: 0;
   }
 }
 @media (min-width: 768px) {
   .footer {
     padding: 34px 0 29px;
-    height: 230px;
   }
 }
 @media (min-width: 1000px) {
@@ -517,16 +492,32 @@ button {
     margin-bottom: 39px;
   }
 }
-.social__logo {
+.social-logo {
   margin-right: 15px;
   width: 40px;
   height: 40px;
 }
 @media (min-width: 768px) {
-  .social__logo {
+  .social-logo {
     width: 36px;
     height: 36px;
   }
+}
+.social-logo_facebook {
+  background-image: url('facebook.ddb44397.svg');
+  background-repeat: no-repeat;
+}
+.social-logo_instagram {
+  background-image: url('instagram.bfc79579.svg');
+  background-repeat: no-repeat;
+}
+.social-logo_twitter {
+  background-image: url('twitter.98166b3e.svg');
+  background-repeat: no-repeat;
+}
+.social-logo_vk {
+  background-image: url('vk.f9c6b044.svg');
+  background-repeat: no-repeat;
 }
 .market {
   display: flex;
@@ -535,10 +526,10 @@ button {
   margin-bottom: 30px;
 }
 .market__app-store {
-  padding-right: 4px;
+  margin-right: 4px;
 }
 .market__google-play {
-  padding-left: 4px;
+  margin-left: 4px;
 }
 @media (min-width: 1000px) {
   .market {
@@ -574,35 +565,24 @@ button {
   align-items: center;
 }
 .promo__description {
-  font: 26px/36px ProximaNovaCond, Arial, sans-serif;
+  font: 26px/1.2 ProximaNovaCond, Arial, sans-serif;
   font-weight: 400;
   width: 290px;
-  height: 64px;
   text-align: center;
   margin-bottom: 20px;
 }
 @media (min-width: 768px) {
   .promo__description {
-    font: 36px/44px ProximaNovaCond, Arial, sans-serif;
+    font-size: 36px;
     text-align: left;
     width: 334px;
-    height: 132px;
   }
 }
 @media (min-width: 1000px) {
   .promo__description {
     text-align: left;
     width: 388px;
-    height: 88px;
   }
-}
-.promo__button {
-  font: 14px/20px Arial, sans-serif;
-  background-color: #0F8FEE;
-  color: #FFFFFF;
-  width: 150px;
-  height: 38px;
-  margin-bottom: 30px;
 }
 @media (min-width: 768px) {
   .promo {
@@ -615,7 +595,7 @@ button {
   overflow: hidden;
   margin-bottom: 15px;
 }
-.slider input {
+.slider__input {
   position: absolute;
   visibility: hidden;
 }
@@ -664,7 +644,7 @@ button {
   width: 25%;
   transition: all 0.6s ease;
 }
-.slide img {
+.slide__img {
   width: 100%;
   height: 100%;
 }
@@ -679,6 +659,14 @@ button {
 }
 #point-4:checked ~ .s1 {
   margin-left: -75%;
+}
+.simple-button {
+  font: 14px/20px Arial, sans-serif;
+  background-color: #0F8FEE;
+  color: #FFFFFF;
+  width: 150px;
+  height: 38px;
+  margin-bottom: 30px;
 }
 
 
