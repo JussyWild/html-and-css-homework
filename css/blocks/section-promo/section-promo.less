@@ -27,34 +27,22 @@
     align-items: center;
 
     &__description {
-        font: 26px/36px @font-family-heading;
+        font: 26px/1.2 @font-family-heading;
         font-weight: 400;
         width: 290px;
-        height: 64px;
         text-align: center;
         margin-bottom: 20px;
 
         @media @screen-gt-s {
-            font: 36px/44px @font-family-heading;
+            font-size: 36px;
             text-align: left;
             width: 334px;
-            height: 132px;
         }
 
         @media @screen-gt-m {
             text-align: left;
             width: 388px;
-            height: 88px;
         }
-    }
-
-    &__button {
-        font: 14px/20px Arial, sans-serif;
-        background-color: @button-bg-color;
-        color: @button-text-color;
-        width: 150px;
-        height: 38px;
-        margin-bottom: 30px;
     }
 
     @media @screen-gt-s {

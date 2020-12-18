@@ -7,15 +7,22 @@
     }
 }
 
-.social {
-    &__logo {
-        margin-right: 15px;
-        width: 40px;
-        height: 40px;
+.social-logo {
+    margin-right: 15px;
+    width: 40px;
+    height: 40px;
 
-        @media @screen-gt-s {
-            width: 36px;
-            height: 36px;
-        }
+    @media @screen-gt-s {
+        width: 36px;
+        height: 36px;
     }
 }
+
+@logos: facebook, instagram, twitter, vk;
+
+each(@logos, {
+    .social-logo_@{value} {
+        background-image: url('@{value}.svg');
+        background-repeat: no-repeat;
+    }
+})
