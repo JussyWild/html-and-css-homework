@@ -38,6 +38,15 @@ body {
   font: 14px/1.4 Arial, sans-serif;
   color: #333;
 }
+a {
+  text-decoration: unset;
+}
+p,
+hr,
+button {
+  border: 0;
+  margin: 0;
+}
 .grid {
   background-image: linear-gradient(to right, transparent 10px, rgba(255, 0, 0, 0.1) 1px);
   background-size: calc(50% + 5px);
@@ -270,8 +279,13 @@ body {
     height: 50px;
   }
 }
+.alter-logo {
+  vertical-align: middle;
+  width: 46px;
+  height: 46px;
+}
 .section-content {
-  padding: 30px 0;
+  padding-top: 30px;
 }
 .product-card {
   margin-bottom: 30px;
@@ -341,6 +355,330 @@ body {
 .menu__link {
   color: #fff;
   text-decoration: none;
+}
+.section-services {
+  box-sizing: border-box;
+  padding: 30px 0;
+  background-color: #EEEEEE;
+  height: 240px;
+}
+@media (min-width: 768px) {
+  .section-services {
+    height: 100px;
+  }
+}
+@media (min-width: 768px) {
+  .service-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.service {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  width: 290px;
+}
+.service__image {
+  width: 40px;
+  height: 40px;
+}
+@media (min-width: 1000px) {
+  .service__image {
+    width: 50px;
+    height: 50px;
+  }
+}
+.service__description {
+  font: 14px/20px Arial, sans-serif;
+  font-weight: 400;
+  box-sizing: border-box;
+  text-align: left;
+  color: #333333;
+  margin-left: 20px;
+  width: 211px;
+  height: 40px;
+}
+@media (min-width: 768px) {
+  .service__description {
+    margin-left: 10px;
+    width: 210px;
+  }
+}
+@media (min-width: 1000px) {
+  .service__description {
+    margin-left: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .service {
+    width: 210px;
+  }
+}
+@media (min-width: 1000px) {
+  .service {
+    width: 290px;
+  }
+}
+@media (min-width: 768px) {
+  .service__delivery {
+    padding-right: 30px;
+  }
+}
+.service__return {
+  padding-right: 40px;
+}
+@media (min-width: 768px) {
+  .service__return {
+    padding-right: 0;
+  }
+}
+@media (min-width: 768px) {
+  .service__support {
+    padding-right: 20px;
+  }
+}
+.footer {
+  background-color: #212122;
+  box-sizing: border-box;
+  padding: 30px 0 22px;
+  height: 299px;
+}
+@media (min-width: 768px) {
+  .footer__content {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.footer__fill {
+  display: none;
+}
+@media (min-width: 1000px) {
+  .footer__fill {
+    display: block;
+    flex-grow: 0.111;
+  }
+}
+.footer__logo {
+  display: none;
+}
+@media (min-width: 1000px) {
+  .footer__logo {
+    display: block;
+  }
+}
+.footer__line {
+  margin-bottom: 15px;
+  border: 1px solid #666666;
+}
+@media (min-width: 768px) {
+  .footer__line {
+    margin-bottom: 30px;
+  }
+}
+.footer__copyright {
+  box-sizing: border-box;
+  color: #999999;
+  height: 95px;
+  padding-right: 40px;
+}
+@media (min-width: 768px) {
+  .footer__copyright {
+    width: 610px;
+    height: 70px;
+    padding-right: 30px;
+  }
+}
+@media (min-width: 1000px) {
+  .footer__copyright {
+    width: 727px;
+    height: 45px;
+    padding-right: 0;
+  }
+}
+@media (min-width: 768px) {
+  .footer {
+    padding: 34px 0 29px;
+    height: 230px;
+  }
+}
+@media (min-width: 1000px) {
+  .footer {
+    padding: 40px 0 35px;
+  }
+}
+.social-wrapper {
+  margin-bottom: 30px;
+  display: flex;
+}
+@media (min-width: 1000px) {
+  .social-wrapper {
+    margin-bottom: 39px;
+  }
+}
+.social__logo {
+  margin-right: 15px;
+  width: 40px;
+  height: 40px;
+}
+@media (min-width: 768px) {
+  .social__logo {
+    width: 36px;
+    height: 36px;
+  }
+}
+.market {
+  display: flex;
+  box-sizing: border-box;
+  vertical-align: middle;
+  margin-bottom: 30px;
+}
+.market__app-store {
+  padding-right: 4px;
+}
+.market__google-play {
+  padding-left: 4px;
+}
+@media (min-width: 1000px) {
+  .market {
+    margin-bottom: 39px;
+  }
+}
+.section-promo {
+  padding-top: 30px;
+  background-color: #F9F9F9;
+}
+.promo-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 378px;
+}
+@media (min-width: 768px) {
+  .promo-wrapper {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    height: 310px;
+  }
+}
+@media (min-width: 1000px) {
+  .promo-wrapper {
+    height: 480px;
+  }
+}
+.promo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.promo__description {
+  font: 26px/36px ProximaNovaCond, Arial, sans-serif;
+  font-weight: 400;
+  width: 290px;
+  height: 64px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .promo__description {
+    font: 36px/44px ProximaNovaCond, Arial, sans-serif;
+    text-align: left;
+    width: 334px;
+    height: 132px;
+  }
+}
+@media (min-width: 1000px) {
+  .promo__description {
+    text-align: left;
+    width: 388px;
+    height: 88px;
+  }
+}
+.promo__button {
+  font: 14px/20px Arial, sans-serif;
+  background-color: #0F8FEE;
+  color: #FFFFFF;
+  width: 150px;
+  height: 38px;
+  margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .promo {
+    align-items: flex-start;
+  }
+}
+.slider {
+  width: 290px;
+  height: 221px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.slider input {
+  position: absolute;
+  visibility: hidden;
+}
+@media (min-width: 768px) {
+  .slider {
+    width: 333px;
+    height: 227px;
+  }
+}
+@media (min-width: 1000px) {
+  .slider {
+    width: 530px;
+    height: 360px;
+  }
+}
+.navigation {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+@media (min-width: 768px) {
+  .navigation {
+    margin-top: 15px;
+  }
+}
+.control {
+  width: 8px;
+  height: 8px;
+  cursor: pointer;
+  margin: 4px;
+  background-color: #DFDEDD;
+  border-radius: 50%;
+  transition: all 0.4s ease;
+}
+.control:hover {
+  background-color: #212122;
+  transform: scale(1.1);
+}
+.slides {
+  width: 400%;
+  height: 100%;
+  display: flex;
+}
+.slide {
+  width: 25%;
+  transition: all 0.6s ease;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+#point-1:checked ~ .s1 {
+  margin-left: 0;
+}
+#point-2:checked ~ .s1 {
+  margin-left: -25%;
+}
+#point-3:checked ~ .s1 {
+  margin-left: -50%;
+}
+#point-4:checked ~ .s1 {
+  margin-left: -75%;
 }
 
 
