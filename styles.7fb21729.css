@@ -419,17 +419,24 @@ button {
     width: 290px;
   }
 }
-.service:last-child {
-  margin-bottom: 0;
+@media (max-width: 767px) {
+  .service:last-child {
+    margin-bottom: 0;
+  }
 }
 .footer {
   background-color: #212122;
   box-sizing: border-box;
   padding: 30px 0 22px;
 }
+.footer__content {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
 @media (min-width: 768px) {
   .footer__content {
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
   }
 }
@@ -444,6 +451,8 @@ button {
 }
 .footer__logo {
   display: none;
+  padding: 0 15px;
+  margin-left: auto;
 }
 @media (min-width: 1000px) {
   .footer__logo {
@@ -494,8 +503,8 @@ button {
 }
 .social-logo {
   margin-right: 15px;
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
 }
 @media (min-width: 768px) {
   .social-logo {
@@ -530,6 +539,11 @@ button {
 }
 .market__google-play {
   margin-left: 4px;
+}
+@media (min-width: 768px) {
+  .market {
+    justify-content: flex-end;
+  }
 }
 @media (min-width: 1000px) {
   .market {
