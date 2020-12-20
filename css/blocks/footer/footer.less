@@ -4,8 +4,12 @@
     padding: 30px 0 22px;
 
     &__content {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+
         @media @screen-gt-s {
-            display: flex;
+            flex-direction: row;
             justify-content: space-between;
         }
     }
@@ -22,6 +26,8 @@
 
     &__logo {
         display: none;
+        padding: 0 @column-padding-m;
+        margin-left: auto;
 
         @media @screen-gt-m {
             display: block;
